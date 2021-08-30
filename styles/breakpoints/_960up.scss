@@ -1,0 +1,417 @@
+.c-txt-xs {
+  font-size: 18px;
+}
+
+.c-txt-sm {
+  font-size: 18px;
+}
+
+.c-txt-md {
+  font-size: 22px;
+}
+
+.c-title {
+  font-size: 26px;
+}
+
+.page-ttl-under {
+  top: 120px;
+  left: 45px;
+  font-size: 28px;
+}
+
+.page-lead-box {
+  padding: 15% 8%;
+  text-align: center;
+}
+
+//.p-header
+.p-header {
+  height: 85px;
+
+  .mobile-container {
+    display: none;
+  }
+
+  .sp-navbtn {
+    display: none;
+  }
+
+  & .logo__img {
+    margin: 25px 10px 0 75px;
+  }
+
+  & .logo {
+    width: 120px;
+  }
+
+  & .pc-container {
+    & .pc-nav {
+      margin: 8px 24px 0 0;
+    }
+  }
+}
+
+//.p-top
+.p-top {
+
+  .swiper-container {
+    width: 85%;
+    border-bottom: solid 8px #ae9373;
+  }
+}
+
+//.p-news
+.p-news {
+  margin-top: 10vw;
+  padding-top: 7vw;
+
+  &__btn {
+    bottom: -58px;
+  }
+
+  &__copy {
+    top: -42%;
+    width: 14%;
+  }
+
+  &__link {
+    width: 125px;
+    height: 125px;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    &::after {
+      background-size: contain;
+      width: 50px;
+      height: 6px;
+    }
+  }
+}
+
+//.p-menu 
+.p-menu {
+  & .c-container {
+    padding: 0 7vw;
+  }
+}
+
+//.p-director
+.p-director {
+  padding-bottom: 5vw;
+
+  &__link {
+    width: 125px;
+    height: 125px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    bottom: -57px;
+
+    &::after {
+      background-size: contain;
+      width: 50px;
+      height: 6px;
+    }
+  }
+}
+
+//.p-access
+.p-access {
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 30%;
+  }
+
+  &__right {
+    padding: 60px 30px 30px 0;
+    width: 65%;
+
+    .gmap {
+      & iframe {
+        height: 300px;
+      }
+    }
+  }
+
+  &__g-map {
+    padding-left: 35px;
+
+    &::before {
+      top: 7px;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+//.p-information
+.p-information {
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 30%;
+
+    & .tel-num {
+      padding-left: 30px;
+    }
+  }
+
+  &__right {
+    padding: 60px 0 30px 0;
+    width: 65%;
+  }
+
+  &__open__table {
+    & th {
+      font-size: 16px;
+    }
+
+    & td {
+      & img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}
+
+//.p-footer 
+.p-footer {
+  padding-bottom: 50px;
+  background-color: #333;
+
+  &__block01 {
+    & p {
+      font-size: 16px;
+    }
+  }
+
+  &__sec01 {
+    letter-spacing: 3px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-size: 20px;
+
+    & .c-txt-sm {
+      font-size: 16px;
+    }
+  }
+
+  & .copyright {
+    font-size: 18px;
+  }
+}
+
+// * * * * * * * about-page * * * * * * 
+.c-about {
+  padding-top: 100px;
+
+  & .director {
+    &__message-area {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 40%;
+    }
+
+    &__desc {
+      width: 45%;
+    }
+
+    &__career-area {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 -7vw;
+      padding: 40px 14% 30px 16%;
+    }
+
+    & .career-ttl {
+      left: 53%;
+    }
+  }
+
+  & .clinic {
+    &__block {
+      & h3 {
+        font-size: 28px;
+        letter-spacing: 3px;
+        margin: 50px 0;
+        text-align: center;
+      }
+    }
+
+    .clinic-info-list {
+      & li {
+        & span {
+          width: 150px;
+          height: 100px;
+        }
+      }
+    }
+
+    .clinic-info-img {
+      height: 300px;
+    }
+  }
+
+  & .promise {
+    &__desc {
+      & .num-tit {
+        & i {
+          font-size: 5vw;
+        }
+
+        & span {
+          padding-left: 2vw;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__block {
+      margin-bottom: 10vw;
+    }
+  }
+}
+
+// * * * * * * * treatment-page * * * * * * 
+.treatment-contents {
+  .treatment {
+    & .c-container {
+      padding: 0 2vw;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      & .img-side {
+        width: 48%;
+
+        & .treatment-ttl {
+          height: 240px;
+        }
+
+        & .treatment-img {
+          height: 240px;
+        }
+      }
+
+      & .text-side {
+        width: 48%;
+        padding: 0;
+
+        & .c-txt-sm {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// * * * * * * * * * recruit-page * * * * * * 
+.contents-recruit {
+  & .recruit {
+    &-message {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__block {
+        width: 31%;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 5vw;
+    }
+
+  }
+
+  .c-table01 {
+    td {
+      line-height: 2;
+      font-size: 1rem;
+    }
+  }
+}
+
+// * * * * * * * * * faq-page * * * * * * 
+.faq-contents {
+  .faq {
+    .c-txtarea01 {
+      .c-txt-sm {
+        font-size: 20px;
+      }
+    }
+
+    .c-txt-md {
+      font-size: 22px;
+    }
+  }
+}
+
+//* * * * * * * news-page * * * * * * *   
+.c-news {
+  margin-top: 15vw;
+
+  &__link {
+    padding: 4vw;
+
+    & span,
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// * * * * * * * * * news-sl-page * * * * * * 
+.c-news-sl {
+  padding: 10vw;
+
+  &__contents {
+    padding: 10vw 0;
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  & .more-link {
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+
+  &__date {
+    font-size: 1.4rem;
+  }
+}

@@ -631,7 +631,11 @@
 }
 
 body {
-  font-family: 'Overpass', 'Noto Serif JP', serif;
+  font-family: "Overpass", "Noto Serif JP", serif;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 a,
@@ -692,7 +696,7 @@ a:active {
 }
 
 .icon-tel::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-tel.png);
   background-position: center;
@@ -707,7 +711,7 @@ a:active {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -722,7 +726,7 @@ a:active {
 }
 
 .icon-net::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-calendar.png);
   background-position: center;
@@ -741,7 +745,7 @@ a:active {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -770,7 +774,7 @@ a:active {
 }
 
 .sec-title::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -793,7 +797,7 @@ a:active {
   font-size: 18px;
   color: #5a5a5a;
   letter-spacing: 3px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -829,7 +833,7 @@ a:active {
   left: -75%;
   z-index: 2;
   display: block;
-  content: '';
+  content: "";
   width: 50%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
@@ -857,7 +861,7 @@ a:active {
 }
 
 .p-news__sec::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 4px;
@@ -868,7 +872,7 @@ a:active {
 }
 
 .p-news__sec::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -917,7 +921,7 @@ a:active {
 }
 
 .p-news__link::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 12px;
@@ -968,7 +972,7 @@ a:active {
 }
 
 .p-menu__btn::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 25px;
@@ -1045,7 +1049,7 @@ a:active {
 }
 
 .p-director__sec::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 4px;
@@ -1056,7 +1060,7 @@ a:active {
 }
 
 .p-director__sec::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -1091,7 +1095,7 @@ a:active {
 }
 
 .p-director__link::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   bottom: 12px;
@@ -1144,7 +1148,7 @@ a:active {
   position: absolute;
   top: 5px;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -1436,7 +1440,7 @@ a:active {
 .c-about .promise__title span {
   color: #ae9373;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .c-about .promise__title p {
@@ -1509,7 +1513,7 @@ a:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1.3333333333vw 5.3333333333vw;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
 }
 
 .c-about .promise__btn a i {
@@ -1653,7 +1657,7 @@ a:active {
 }
 
 .contents-recruit {
-  padding: 150px 0 50px 0;
+  padding: 15px 0 50px 0;
 }
 
 .contents-recruit .c-table01 tr {
@@ -1668,7 +1672,7 @@ a:active {
 
 .contents-recruit .c-table01 td {
   line-height: 1.5;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 599px) {
@@ -1690,7 +1694,7 @@ a:active {
   color: #303030;
   letter-spacing: 3px;
   text-align: center;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 .contents-recruit .recruit-message__block {
@@ -1736,7 +1740,7 @@ a:active {
 }
 
 .faq-contents .faq {
-  margin: 35vw 0 30vw 0;
+  margin: 10vw 0 30vw 0;
 }
 
 .faq-contents .faq .c-txt-md {
@@ -1767,7 +1771,7 @@ a:active {
 }
 
 .faq-contents .faq dt::before {
-  content: 'Q';
+  content: "Q";
   position: absolute;
   top: 4vw;
   left: 0;
@@ -1787,7 +1791,7 @@ a:active {
 }
 
 .faq-contents .faq dt span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1799,8 +1803,8 @@ a:active {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .faq-contents .faq dd {
@@ -1808,7 +1812,7 @@ a:active {
 }
 
 .faq-contents .faq dd::before {
-  content: 'A';
+  content: "A";
   position: absolute;
   top: 1vw;
   left: 0;
@@ -1827,7 +1831,7 @@ a:active {
 }
 
 .c-news {
-  padding: 150px 0 10vw 0;
+  padding: 10px 0 10vw 0;
   letter-spacing: 3px;
 }
 
@@ -1843,7 +1847,7 @@ a:active {
 
 .c-news__link p {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__date {
@@ -1884,7 +1888,7 @@ a:active {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1944,7 +1948,7 @@ a:active {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1959,7 +1963,7 @@ a:active {
 }
 
 .c-news-sl {
-  padding: 30vw 0 20vw 0;
+  padding: 5vw 0 10vw 0;
 }
 
 .c-news-sl .c-container {
@@ -1971,22 +1975,22 @@ a:active {
 }
 
 .c-news-sl__list {
-  padding: 15vw 0 0 0;
+  padding: 2vw 0 0 0;
 }
 
 .c-news-sl__contents {
-  padding: 20vw 0 10vw 0;
+  padding: 5vw 0 10vw 0;
   line-height: 2.5;
 }
 
 .c-news-sl__contents p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -2003,9 +2007,9 @@ a:active {
   overflow: hidden;
   color: #303030;
   font-size: 14px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-writing-mode: vertical-lr;
@@ -2014,7 +2018,7 @@ a:active {
 }
 
 .scrolldown::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -2024,7 +2028,7 @@ a:active {
 }
 
 .scrolldown::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -3373,7 +3377,7 @@ a:active {
     padding: 0 7vw;
   }
   .faq-contents .faq {
-    margin: 15vw 0;
+    margin: 6vw 0;
   }
   .faq-contents .faq__title {
     text-align: center;
@@ -3700,7 +3704,7 @@ a:active {
     font-size: 22px;
   }
   .c-news {
-    margin-top: 15vw;
+    margin-top: 5vw;
   }
   .c-news__link {
     padding: 4vw;

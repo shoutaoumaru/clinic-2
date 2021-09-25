@@ -1,12 +1,16 @@
+<?php
+ /* Template Name: faq
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>医院サンプル2 | よくあるご質問</title>
-    <link rel="stylesheet" href="/styles/vendors/animsition.min.css" />
-    <link rel="stylesheet" href="../styles/vendors/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendors/animsition.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
   </head>
 
   <body>
@@ -15,7 +19,7 @@
       <header id="header" class="p-header">
         <div class="mobile-container">
           <div class="logo__img">
-            <a class="animsition-link" href="/">
+            <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?> ">
               <div class="logo"></div>
             </a>
           </div>
@@ -30,43 +34,42 @@
         <!-- /.mobile-container -->
         <div class="pc-container">
           <div class="logo__img">
-            <a href="/">
+            <a href=" <?php echo esc_url( home_url('/')); ?>">
               <div class="logo-pc logo"></div>
             </a>
           </div>
           <nav class="pc-nav">
             <ul class="pc-nav-list">
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/"
+                <a class="pc-nav-link animsition-link" href=" <?php echo esc_url( home_url('/')); ?>"
                   ><span>ホーム</span></a
                 >
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/about/about.html"
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/about')); ?>"
                   ><span>当院について</span></a
                 >
               </li>
               <li class="pc-nav-item">
                 <a
                   class="pc-nav-link animsition-link"
-                  href="/treatment/treatment.html"
+                  href="<?php echo esc_url( home_url('/treatment')); ?>"
                   ><span>診療について</span></a
                 >
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/staff/staff.html"
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"
                   ><span>医師紹介</span></a
                 >
               </li>
               <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/news/news.html"
-                  ><span>お知らせ</span></a
+                <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('news')); ?>"><span>お知らせ</span></a
                 >
               </li>
               <li class="pc-nav-item">
                 <a
                   class="pc-nav-link animsition-link"
-                  href="/recruit/recruit.html"
+                  href="<?php echo esc_url( home_url('/recruit')); ?>"
                   ><span>採用情報</span></a
                 >
               </li>
@@ -95,7 +98,7 @@
       </header>
       <!-- /.header -->
       <div class="c-top-view">
-        <img src="/images/home/clinic__1@pc.jpg" alt="" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" alt="" />
       </div>
       <!-- /.c-top-view -->
       <div class="faq-contents">
@@ -189,29 +192,29 @@
                 <a class="animsition-link c-txt-sm" href="/">ホーム</a>
               </li>
               <li class="gnav01">
-                <a class="animsition-link c-txt-sm" href="/about/about.html"
+                <a class="animsition-link c-txt-sm" href="<?php echo esc_url( home_url('/about')); ?>"
                   >当院について</a
                 >
               </li>
               <li class="gnav02">
                 <a
                   class="animsition-link c-txt-sm"
-                  href="/treatment/treatment.html"
+                  href="<?php echo esc_url( home_url('/treatment')); ?>"
                   >診療について</a
                 >
               </li>
               <li class="gnav03">
-                <a class="animsition-link c-txt-sm" href="/staff/staff.html"
+                <a class="animsition-link c-txt-sm" href="<?php echo esc_url( home_url('/staff')); ?>"
                   >医師紹介</a
                 >
               </li>
               <li class="gnav04">
-                <a class="animsition-link c-txt-sm" href="/news/news.html"
+                <a class="animsition-link c-txt-sm" href="<?php echo esc_url( home_url('news')); ?>"
                   >お知らせ</a
                 >
               </li>
               <li class="gnav06">
-                <a class="animsition-link c-txt-sm" href="/recruit/"
+                <a class="animsition-link c-txt-sm" href="<?php echo esc_url( home_url('/recruit')); ?>"
                   >採用情報</a
                 >
               </li>
@@ -225,26 +228,26 @@
         <nav class="mobile-menu__nav">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/">ホーム</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">ホーム</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="about/about.html"
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/about')); ?>"
                 >当医院について</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="treatment/treatment.html"
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/treatment')); ?>"
                 >診療について</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/staff/staff.html">医師紹介</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">医師紹介</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/news/news.html">お知らせ</a>
+              <a class="animsition-link" href="<?php echo esc_url( home_url('news')); ?>">お知らせ</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="animsition-link" href="/recruit/recruit.html"
+              <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"
                 >採用情報</a
               >
             </li>
@@ -271,12 +274,12 @@
     </div>
     <!-- /.main-wrapper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../scripts/vendor/animsition.min.js"></script>
-    <script src="../scripts/libs/accordion.js"></script>
-    <script src="../scripts/libs/scroll-btn.js"></script>
-    <script src="/scripts/libs/page.js"></script>
-    <script src="../scripts/libs/scroll.js"></script>
-    <script src="../scripts/libs/mobile-menu.js"></script>
-    <script src="../scripts/c-main.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/accordion.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/c-main.js"></script>
   </body>
 </html>
